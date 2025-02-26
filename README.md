@@ -9,7 +9,7 @@ While there are several great options when it comes to data fitting, for example
 - give custom binning
 - fit already binned data
 
-There is always the possibility of using `scipy.optimize.curve_fit` to overcome this, but it is annoying to implement the fitting pipeline every time. Here I implemented in `numpy` the 80 well-known distributions from `distfit`'s `distr=full` option and created a very minimalistic pipeline to call a `curve_fit`. I also included a script for `normal`, `logspace`, and `custom logarithmic` data binning. The benefit of this minimalistic approach is that the list of functions is easy to expand and the existing distribution functions can be accessed and modified at will.
+There is always the possibility of using `scipy.optimize.curve_fit` to overcome this, but it is annoying to implement the fitting pipeline every time. Here I implemented in `numpy` the 80 well-known distributions from `distfit`'s `distr=full` option and created a very minimalistic pipeline to call `curve_fit`. I also included a script for `custom logarithmic` data binning. The benefit of this minimalistic approach is that the list of functions is easy to expand and the existing distribution functions can be accessed and modified at will.
 
 I still encourage the use of `distfit` whenever it suits your problem as it is for sure a more complex and neater approach, but for custom logic, this small repo can be useful.
 
