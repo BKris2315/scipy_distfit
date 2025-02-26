@@ -40,6 +40,7 @@ print(f'Fitted parameters: {params}')
 x_new =  np.linspace(xmin, xmax, 100)
 distr_f = getattr(PDFs, 'powerlaw_simple')
 y_new = distr_f(x_new, *list(params.values()))
+
 plt.plot(x_new, y_new, '--', c='r', label=rf'$c\cdot x^\alpha$, $\alpha = {{{list(params.values())[0]:.4f}}}$')
 plt.legend()
 plt.xlabel(r'$x$')
