@@ -15,7 +15,7 @@ I still encourage the use of `distfit` whenever it suits your problem as it is f
 
 ## Example usage
 
-```
+```python
 from fitting import log_binning, pdf_fitter
 
 data = np.loadtxt("you_data_file.dat")
